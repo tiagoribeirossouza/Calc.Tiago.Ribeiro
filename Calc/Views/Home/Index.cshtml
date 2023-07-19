@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Calculatrice";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6 text-center">
+            <div>
+                <div><h1 class="text-secondary" style="font-size:40px; line-height: 64px;">Calculatrice Simple</h1> </div>
+                <br>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <div class="input-group input-group-lg mb-3 ">
+                            <input id="btnclear" type="button" value="C" class="btn btn-primary" />
+                            <input type="text" class="form-control" id="txtnumber" aria-describedby="basic-addon3">
+                            <input id="btncalculer" type="button" value="=" class="btn btn-primary" />
+
+                        </div>
+
+                    </div>
+                </div>
+                <section>
+
+                    <div class="form-group row">
+                        <div class="col-sm-8">
+                            <button type="button" value="1" id="btn1" class="btn btn-secondary">1</button>
+                            <button type="button" value="2" id="btn2" class="btn btn-secondary">2</button>
+                            <button type="button" value="3"  id="btn3" class="btn btn-secondary">3</button>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <div class="col-sm-8">
+                            <button type="button" value="4" id="btn4" class="btn btn-secondary">4</button>
+                            <button type="button" value="5" id="btn5" class="btn btn-secondary">5</button>
+                            <button type="button" value="6"  id="btn6" class="btn btn-secondary">6</button>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group row">
+                        <div class="col-sm-8">
+                            <button type="button" value="7" id="btn7" class="btn btn-secondary">7</button>
+                            <button type="button" value="8" id="btn8" class="btn btn-secondary">8</button>
+                            <button type="button" value="9" id="btn9" class="btn btn-secondary">9</button>
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="form-group row">
+                        <div class="col-sm-8">
+                            <button type="button" value="," id="btnvirgule" class="btn btn-secondary">,</button>
+                            <button type="button" value="0" id="btn0" class="btn btn-secondary">0</button>
+                            <button type="button" value="#" id="btn" disabled class="btn btn-secondary">#</button>
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="form-group row">
+                        <div class="col-sm-8">
+                            <button type="button" value="+" id="btnMais" class="btn btn-secondary">+</button>
+                            <button type="button" value="-" id="btnMenos" class="btn btn-secondary">-</button>
+                            <button type="button" value="*" id="btnmult" class="btn btn-secondary">*</button>
+                            <button type="button" value="/" id="btndiv" class="btn btn-secondary">/</button>
+                        </div>
+                    </div>
+                </section>
+                <br>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+
+<script src="~/calc/main.js"></script>
+<script src="~/calc/calc.js"></script>
